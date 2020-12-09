@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" />
+    <title>SmartEd</title>
+</head>
+<body>
+    <div class="grid-container">
+        <main id = "sums">
+            <div class="title">
+                <h2>Times Tables Practice</h2>
+            </div>
+            <div class="numberOfSums">
+                <ul>
+                    <li>Number of Sums <input type="number" placeholder="1-80"></li>
+                </ul>                    
+            </div>
+
+            <div id="times-divide">
+                <ul>
+                    <li><input type="checkbox" value='times'> Times</li>
+                    <li><input type="checkbox" value='divide'> Divide</li>
+                </ul>
+            </div>
+
+            <div id="tables">
+                <ul id="d">
+                    <li>2 <input id="c" name="checkbox" value="2" type="checkbox" /></li>
+                    <li>3 <input id="c" name="checkbox" value="3" type="checkbox" /></li>
+                    <li>4 <input id="c" name="checkbox" value="4" type="checkbox" /></li>
+                    <li>5 <input id="c" name="checkbox" value="5" type="checkbox" /></li>
+                    <li>6 <input id="c" name="checkbox" value="6" type="checkbox" /></li>
+                    <li>7 <input id="c" name="checkbox" value="7" type="checkbox" /></li>
+                    <li>8 <input id="c" name="checkbox" value="8" type="checkbox" /></li>
+                    <li>9 <input id="c" name="checkbox" value="9" type="checkbox" /></li>
+                    <li>10 <input id="c" name="checkbox" value="10" type="checkbox" /></li>
+                    <li>11 <input id="c" name="checkbox" value="11" type="checkbox" /></li>
+                    <li>12 <input id="c" name="checkbox" value="12" type="checkbox" /></li>
+                    <li>13 <input id="c" name="checkbox" value="13" type="checkbox" /></li>
+                    <li>14 <input id="c" name="checkbox" value="14" type="checkbox" /></li>
+                    <li>15 <input id="c" name="checkbox" value="15" type="checkbox" /></li>
+                    <li>16 <input id="c" name="checkbox" value="16" type="checkbox" /></li>
+                    <li>17 <input id="c" name="checkbox" value="17" type="checkbox" /></li>
+                    <li>18 <input id="c" name="checkbox" value="18" type="checkbox" /></li>
+                    <li>19 <input id="c" name="checkbox" value="19" type="checkbox" /></li>
+                    <li>20 <input id="c" name="checkbox" value="20" type="checkbox" /></li>
+                </ul>
+            </div>
+            <button id='submit'>Generate PDF</button>
+            <input type="button" id="create_pdf" value="Generate PDF"> 
+
+            <div id="sums1">
+                <h3>Timestables Testing</h3>
+                <div class="box">
+                    <ol>
+
+                    </ol>
+                </div>
+                <footer>
+                    Created by Mind-Wiz.com copyright &copy; 2020
+                </footer>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+
+    <!-- SCRIPT FOR PDF -->
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>  
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.min.js"></script>  
+
+<script src="pdfscript.js"></script>
+
+</body>
+</html>
